@@ -1,64 +1,18 @@
-<div class="container">
-  <h3 class="mb-3">DATOS PERSONALES</h3>
+<script>
+  import InputWrapper from "../common/InputWrapper.svelte";
+  import Input from "../features/Input.svelte";
+</script>
 
-  <div class="row">
-    <div class="col-md-6">
-      <div class="form-floating">
-        <input
-          type="text"
-          class="form-control"
-          id="nombre"
-          placeholder="Nombre y Apellido"
-        />
-        <label for="nombre">Razon social</label>
-      </div>
+<div class="">
+  <InputWrapper titulo={"Razon Social"}>
+    <div class="row">
+      <Input nombre={"Razon Social"} cols={6} />
+      <Input nombre={"Documento"} cols={6} />
+      <Input nombre={"Nombre y Apellido"} cols={6} />
+      <Input nombre={"Telefono"} cols={6} />
+      <Input nombre={"Email"} cols={6} />
     </div>
-
-    <div class="col-md-6">
-      <div class="form-floating mb-3">
-        <input
-          type="number"
-          class="form-control"
-          id="documento"
-          placeholder="Numero de documento"
-        />
-        <label for="documento">Documento</label>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="form-floating mb-3">
-        <input
-          type="text"
-          class="form-control"
-          id="nombre"
-          placeholder="Nombre y Apellido"
-        />
-        <label for="nombre">Nombre y Apellido</label>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="form-floating mb-3">
-        <input
-          type="text"
-          class="form-control"
-          id="nombre"
-          placeholder="Nombre y Apellido"
-        />
-        <label for="nombre">Telefono</label>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="form-floating mb-4">
-        <input
-          type="text"
-          class="form-control"
-          id="nombre"
-          placeholder="Nombre y Apellido"
-        />
-        <label for="nombre">Email</label>
-      </div>
-    </div>
-  </div>
+  </InputWrapper>
 
   <h3 class="mb-3">DATOS DEL COMERCIO O INDUSTRIA</h3>
   <div class="row">
@@ -463,3 +417,6 @@
     </div>
   </div>
 </footer>
+
+<!-- COMPONENTES NUEVOS -->
+<div class="container"></div>

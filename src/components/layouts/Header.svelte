@@ -86,39 +86,15 @@
           </li>
           <li class="nav-item">
             <a
-              class="nav-link text-body-secondary{activeLink === 'memos'
+              class="nav-link text-body-secondary{activeLink === 'correo'
                 ? 'active'
                 : ''}"
               aria-current="page"
               on:click={() => {
-                handleActive("memos");
+                handleActive("correo");
               }}
-              href="/memos">Memos</a
+              href="/correos">correos</a
             >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link text-body-secondary{activeLink === 'secretarias'
-                ? 'active'
-                : ''}"
-              aria-current="page"
-              on:click={() => {
-                handleActive("secretarias");
-              }}
-              href="/secretarias">Secretarias</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link text-body-secondary{activeLink === 'informes'
-                ? 'active'
-                : ''}"
-              on:click={() => {
-                handleActive("informes");
-              }}
-              href="/informes"
-              >Informes
-            </a>
           </li>
         </ul>
         <div class="mt-4 nav-item">
